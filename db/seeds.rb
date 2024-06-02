@@ -33,7 +33,7 @@ user2 = User.create!(
 
 
 # Create vehicles associated with users
-user1.vehicles.create!(
+vehicle1 = user1.vehicles.create!(
   vehicle_type: 'car',
   engine_type: 'electric',
   horse_power: 300,
@@ -42,7 +42,7 @@ user1.vehicles.create!(
   price: 45000.00
 )
 
-user1.vehicles.create!(
+vehicle2 = user1.vehicles.create!(
   vehicle_type: 'bike',
   engine_type: 'petrol',
   horse_power: 200,
@@ -51,7 +51,7 @@ user1.vehicles.create!(
   price: 35000.00
 )
 
-user2.vehicles.create!(
+vehicle3 = user2.vehicles.create!(
   vehicle_type: 'car',
   engine_type: 'diesel',
   horse_power: 400,

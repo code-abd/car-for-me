@@ -1,6 +1,7 @@
 class Vehicle < ApplicationRecord
   # Associations
   belongs_to :user, optional: true
+  has_many :ads, dependent: :destroy
 
   # Types
   enum vehicle_type: {

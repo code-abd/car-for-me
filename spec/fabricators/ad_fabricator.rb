@@ -1,0 +1,2 @@
+Fabricator(:ad) do
+end
